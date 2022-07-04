@@ -133,16 +133,18 @@ header .search-bar a:active{
 
 .container .quote .left-comma img{
     width: 50px;
+    filter: invert();
 }
 
 .container .quote .right-comma img{
     width: 50px;
+    filter: invert();
 }
 
 .container .quote .para{
     font-size: 70px;
     font-weight: 700;
-    color: #2C3639;
+    color: white;
 }
 
 .container .cover-img img{
@@ -154,9 +156,9 @@ header .search-bar a:active{
     margin-top: -80px;
 }
 
-.hidden{
+ .hidden{
     display: none;
-}
+ }
 
 
 /*******************************CARD*********************************/
