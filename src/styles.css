@@ -8,21 +8,24 @@
 
 }
 
-body{
+html,body{
     width: 100%;
     height: 100vh;
     background-color: #f8ceec;
+    overflow: hidden;
     background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     font-family: 'Amatic SC', cursive;
     /* font-family: 'Lobster', cursive; */
 }
+
+/*******************************HEADER*********************************/
 
 header{
     display: flex;
     /* border: 2px solid red; */
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px
 }
 
 header .logo{
@@ -38,8 +41,9 @@ header .logo img{
 
 header .logo p{
     font-family: 'Amatic SC', cursive;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
+    color: #2C3639;
 }
 
 header .search-bar{
@@ -109,3 +113,45 @@ transition: all 0.5s ease-out;
 header .search-bar a:active{
     transform: scale(1.2);
 }
+
+
+/*******************************SECTION*********************************/
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 500px;
+    /* border: 2px solid black; */
+}
+
+.container .quote .left-comma img{
+    width: 50px;
+}
+
+.container .quote .right-comma img{
+    width: 50px;
+}
+
+.container .quote .para{
+    font-size: 70px;
+    font-weight: 700;
+    color: #2C3639;
+}
+
+.container .cover-img img{
+    width: 750px;
+
+}
+
+.container .cover-img{
+    margin-top: -80px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/*******************************CARD*********************************/
