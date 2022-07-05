@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #f8ceec;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url(/src/images/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -211,7 +211,7 @@ header .search-bar a:active {
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  
+
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -246,7 +246,7 @@ header .search-bar a:active {
   flex-direction: column;
   color: white;
   font-size: 1.7rem;
-  
+
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -261,18 +261,16 @@ header .search-bar a:active {
   gap: 2rem;
 }
 
-.card .right-side .min-max .likes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-size: 1.7rem;
-    
-    text-shadow: 2px 2px 4px #000000;
-  
-}
+.card .right-side .min-max .likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.7rem;
 
+  text-shadow: 2px 2px 4px #000000;
+}
 
 .card .right-side .min-max-temp {
   display: flex;
@@ -281,7 +279,7 @@ header .search-bar a:active {
 
   color: white;
   font-size: 1.7rem;
-  
+
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -303,7 +301,7 @@ header .search-bar a:active {
   flex-direction: row;
   color: white;
   font-size: 1.6rem;
-  
+
   text-shadow: 2px 2px 4px #000000;
 }
 

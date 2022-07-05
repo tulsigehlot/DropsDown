@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script  defer src="src/script.js"></script>
-    <link rel="stylesheet" href="src/styles.css">
-    <link rel="shortcut icon" href="src/images/icon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="src/script.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="shortcut icon" href="src/images/icon.png" type="image/x-icon" />
     <title>Drops!Down--Know weather at one search</title>
-</head>
-<body>
+  </head>
+  <body>
     <!------------------------------header----------------------------->
     <header class="header">
-        <div class="logo">
-            <img src="src/images/icon.png" alt="logo">
-            <p class="app-name">Drops<span>!</span>Down</p>
+      <div class="logo">
+        <img src="src/images/icon.png" alt="logo" />
+        <p class="app-name">Drops<span>!</span>Down</p>
+      </div>
+      <div class="search-bar">
+        <div class="input">
+          <input
+            class="search"
+            type="text"
+            placeholder="Enter your city name"
+            style="color: white"
+          />
+          <img class="icon" src="src/images/search.png" alt="search--icon" />
         </div>
-        <div class="search-bar">
-            <div class="input">
-                <input class="search" type="text" placeholder="Enter your city name" style="color:white ;" >
-                <img class="icon" src="src/images/search.png" alt="search--icon">
-
-            </div>
-            <a href="#" class="current--location">Get Device Location</a>
-        </div>
+        <a href="#" class="current--location">Get Device Location</a>
+      </div>
     </header>
 
     <!------------------------------main section----------------------------->
-    <section class="container" >
-        <div class="quote">
-           <div class="left-comma">
-            <img src="src/images/left-quote.png" alt="left">
-           </div>
-           <div class="para">
-            <p>The best weather prediction <br> for the present <br> moment is to look out of <br> the window!</p>
-           </div>
-           <div class="right-comma">
-            <img src="src/images/right-quote.png" alt="right">
-           </div>
+    <section class="container">
+      <div class="quote">
+        <div class="left-comma">
+          <img src="src/images/left-quote.png" alt="left" />
         </div>
-        <div class="cover-img">
-            <img src="src/images/cover-removebg.png" alt="cover-image">
+        <div class="para">
+          <p>
+            The best weather prediction <br />
+            for the present <br />
+            moment is to look out of <br />
+            the window!
+          </p>
         </div>
+        <div class="right-comma">
+          <img src="src/images/right-quote.png" alt="right" />
+        </div>
+      </div>
+      <div class="cover-img">
+        <img src="src/images/cover-removebg.png" alt="cover-image" />
+      </div>
     </section>
 
     <!------------------------------weather card  section----------------------------->
     <section class="card hidden">
-        <div class="left-side">
-            <img  class="weather-icon" src="src/images/clear.png" alt="clear">
-            <p class="temp">28</p>
-            <p class="description">Clear Sky</p>
+      <div class="left-side">
+        <img class="weather-icon" src="src/images/clear.png" alt="clear" />
+        <p class="temp">28</p>
+        <p class="description">Clear Sky</p>
+      </div>
+      <div class="right-side">
+        <div class="humidity">
+          <img src="src/images/humidity.png" alt="humid" class="humid-icon" />
+          <div class="humid-para">
+            <p class="humid-percent">30</p>
+            <p class="humid-descrip">Humidity</p>
+          </div>
         </div>
-        <div class="right-side">
-            <div class="humidity">
-                <img src="src/images/humidity.png" alt="humid" class="humid-icon">
-                <div class="humid-para">
-                    <p class="humid-percent">30</p>
-                    <p class="humid-descrip">Humidity</p>
-                </div>
-            </div>
-            <div class="min-max">
-                <img src="src/images/max-temp.png" alt="max" class="min-max-icon">
-                <div class="likes">
-                <p class="min-max-temp">30 /30</p>
-                <p class="feels">Feels Like</p>
-
-                </div>
-            </div>
-            <div class="location">
-                <img src="src/images/navigation.png" alt="marker" class="marker">
-                <p class="current-location">Jaipur ,India</p>
-            </div>
-            <div class="btn">
-                <button class="clear">Clear</button>
-            </div>
+        <div class="min-max">
+          <img src="src/images/max-temp.png" alt="max" class="min-max-icon" />
+          <div class="likes">
+            <p class="min-max-temp">30 /30</p>
+            <p class="feels">Feels Like</p>
+          </div>
         </div>
+        <div class="location">
+          <img src="src/images/navigation.png" alt="marker" class="marker" />
+          <p class="current-location">Jaipur ,India</p>
+        </div>
+        <div class="btn">
+          <button class="clear">Clear</button>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
