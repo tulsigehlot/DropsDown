@@ -88,6 +88,8 @@ async function getCurrentWeather(jsonData) {
   } else if (id >= 801 && id <= 804) {
     weatherIcon.src = "src/images/cloud.png";
   }
+  quoteContainer.classList.add('hidden');
+  cardsContainer.classList.remove('hidden');
 }
 
 ////////////////////////////get device location////////////////////////////////////////
