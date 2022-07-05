@@ -1,325 +1,314 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100vh;
-    background-color: #f8ceec;
-    overflow: hidden;
-    background-image: url(/src/images/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Amatic SC', cursive;
-    /* font-family: 'Lobster', cursive; */
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8ceec;
+  overflow: hidden;
+  background-image: url(/src/images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Amatic SC", cursive;
+  /* font-family: 'Lobster', cursive; */
 }
 
 /*******************************HEADER*********************************/
 
-header{
-    display: flex;
-    /* border: 2px solid red; */
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px
+header {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-header .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-header .logo img{
-    width: 60px;
+header .logo img {
+  width: 60px;
 }
 
-header .logo p{
-    font-family: 'Amatic SC', cursive;
-    font-size: 70px;
-    font-weight: 700;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
+header .logo p {
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-header span{
-    font-family: 'Amatic SC', cursive;
-    font-size: 70px;
-    font-weight: 700;
-    color: #F87474;
+header span {
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+  font-weight: 700;
+  color: #f87474;
 }
 
-header .search-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid blue; */
-    gap: 15px;
-    font-size: 20px;
-    font-weight: 700;
+header .search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 header .search-bar .input {
-    /* border: 2px solid green; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 50px;
-    padding: 0.3rem;
-    -webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
-
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 0.3rem;
+  -webkit-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
 }
 
-
-header .search-bar .input .search{
-    height: 6vh;
-    width: 250px;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 1rem;
-    caret-color:white;
-    text-shadow: 2px 2px 4px #000000;
-
+header .search-bar .input .search {
+  height: 6vh;
+  width: 250px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  caret-color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-header .search-bar .input img{
-    width: 30px;
-    cursor: pointer;
-    filter: invert();
-
+header .search-bar .input img {
+  width: 30px;
+  cursor: pointer;
+  filter: invert();
 }
 
-header .search-bar .input .search::placeholder{
-    color: white;
-    font-family: 'Amatic SC', cursive;
-    font-size: 21px;
-    font-weight: 700;
-
+header .search-bar .input .search::placeholder {
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-size: 21px;
+  font-weight: 700;
 }
 
-header .search-bar a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 21px;
-    background-color: white;
-    height: 8vh;
-    width: 180px;
-    color: black;
-    -webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+header .search-bar a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 21px;
+  background-color: white;
+  height: 8vh;
+  width: 180px;
+  color: black;
+  -webkit-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
 
-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-header .search-bar a:active{
-    transform: scale(1.2);
+header .search-bar a:active {
+  transform: scale(1.2);
 }
-
 
 /*******************************SECTION*********************************/
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    margin-bottom: 500px;
-    /* border: 2px solid black; */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 500px;
+  /* border: 2px solid black; */
 }
 
-.container .quote .left-comma img{
-    width: 50px;
-    filter: invert();
+.container .quote .left-comma img {
+  width: 50px;
+  filter: invert();
 }
 
-.container .quote .right-comma img{
-    width: 50px;
-    filter: invert();
+.container .quote .right-comma img {
+  width: 50px;
+  filter: invert();
 }
 
-.container .quote .para{
-    font-size: 70px;
-    font-weight: 700;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
+.container .quote .para {
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.container .cover-img img{
-    width: 750px;
-
+.container .cover-img img {
+  width: 750px;
 }
 
-.container .cover-img{
-    margin-top: -80px;
+.container .cover-img {
+  margin-top: -80px;
 }
 
- .hidden{
-    display: none;
- }
-
+.hidden {
+  display: none;
+}
 
 /*******************************CARD*********************************/
 
-.card .left-side, .card .right-side{
-    backdrop-filter: blur(0px) saturate(200%);
-    -webkit-backdrop-filter: blur(0px) saturate(200%);
-    background-color: rgba(17, 25, 40, 0.58);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    transition: all 0.3s ease;
-    }
-
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 0.5rem;
+.card .left-side,
+.card .right-side {
+  backdrop-filter: blur(0px) saturate(200%);
+  -webkit-backdrop-filter: blur(0px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.58);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: all 0.3s ease;
 }
 
-.card .left-side{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem;
-    width: 350px;
-    height: 500px;
-    gap: 2rem;
-    }
-
-.card .left-side:hover{
-    transform: scale(1.03);
-    /* z-index: 2; */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 0.5rem;
 }
 
-.card .left-side img{
-    width: 200px;
+.card .left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  width: 350px;
+  height: 500px;
+  gap: 2rem;
 }
 
-.card .left-side p{
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
+.card .left-side:hover {
+  transform: scale(1.03);
+  /* z-index: 2; */
 }
 
-.card .right-side{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem;
-    width: 350px;
-    height: 500px;
-   
-    gap: 3.2rem;
-
+.card .left-side img {
+  width: 200px;
 }
 
-.card .right-side:hover{
-    transform: scale(1.03);
-    z-index: 2;
+.card .left-side p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
 }
 
+.card .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  width: 350px;
+  height: 500px;
 
-.card .right-side .humidity{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  gap: 3.2rem;
 }
 
-.card .right-side .humidity .humid-para{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-size: 2rem;
+.card .right-side:hover {
+  transform: scale(1.03);
+  z-index: 2;
 }
 
-.card .right-side .humidity .humid-icon{
-    width: 50px;
+.card .right-side .humidity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.card .right-side .min-max{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.card .right-side .humidity .humid-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
 }
 
-.card .right-side .min-max-temp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    font-size: 1.7rem;
+.card .right-side .humidity .humid-icon {
+  width: 50px;
 }
 
-.card .right-side .min-max .min-max-icon{
-    width: 50px;
+.card .right-side .min-max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.card .right-side .location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
+.card .right-side .min-max-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  font-size: 1.7rem;
 }
 
-
-.card .right-side .location .current-location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    font-size: 1.8rem;
+.card .right-side .min-max .min-max-icon {
+  width: 50px;
 }
 
-.card .right-side .location .marker{
-    width: 50px;
+.card .right-side .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.card .right-side .btn button{
-    width: 100px;
-    height: 5vh;
-    font-weight: 700;
-    font-size: 23px;
-    background-color: white;
-    /* height: 8vh;
+.card .right-side .location .current-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.card .right-side .location .marker {
+  width: 50px;
+}
+
+.card .right-side .btn button {
+  width: 100px;
+  height: 5vh;
+  font-weight: 700;
+  font-size: 23px;
+  background-color: white;
+  /* height: 8vh;
     width: 180px;*/
-    color: black; 
-    -webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
-font-family: 'Amatic SC', cursive;
-transition: all 0.5s ease-out;
-border: none;
-outline: none;
-border-radius: 50px;
+  color: black;
+  -webkit-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.75);
+  font-family: "Amatic SC", cursive;
+  transition: all 0.5s ease-out;
+  border: none;
+  outline: none;
+  border-radius: 50px;
 }
 
-.card .right-side .btn button:active{
-    transform: scale(1.2);
+.card .right-side .btn button:active {
+  transform: scale(1.2);
 }
