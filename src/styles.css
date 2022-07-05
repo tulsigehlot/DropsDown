@@ -183,7 +183,7 @@ header .search-bar a:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 40px;
     gap: 0.5rem;
 }
 
@@ -292,4 +292,27 @@ header .search-bar a:active{
 
 .card .right-side .location .marker{
     width: 80px;
+}
+
+.card .right-side .btn button{
+    width: 100px;
+    height: 5vh;
+    font-weight: 700;
+    font-size: 23px;
+    background-color: white;
+    /* height: 8vh;
+    width: 180px;*/
+    color: black; 
+    -webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+font-family: 'Amatic SC', cursive;
+transition: all 0.5s ease-out;
+border: none;
+outline: none;
+border-radius: 50px;
+}
+
+.card .right-side .btn button:active{
+    transform: scale(1.2);
 }
