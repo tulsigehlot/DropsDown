@@ -11,7 +11,7 @@ const descript = document.querySelector('.description');
 const percent= document.querySelector('.humid-percent');
 const feels = document.querySelector('.min-max-temp');
 let cityCountry= document.querySelector('.current-location');
-
+const weatherIcon =  document.querySelector('.weather-icon');
 
 ////////////////////////////clear inputs and button////////////////////////////////////////
 
@@ -36,17 +36,45 @@ searchIcon.addEventListener('click',function(){
 
 
        const city =await jsonData.name;
-       const {country,id}=await jsonData.sys.country;
+       const country=await jsonData.sys.country;
+       const id =  await jsonData.weather[0].id;
+       console.log(id);
        ///showing the current temperature
        temperature.textContent =`${jsonData.main.temp}\u00B0 C` ;
        descript.textContent = jsonData.weather[0].description;
        percent.textContent =`${jsonData.main.humidity}%`;
        feels.textContent = `${jsonData.main.feels_like}\u00B0 C` ;
        cityCountry.textContent = `${city}, ${country}`;
+
+       ////////////////////////////weather image////////////////////////////////////////
+      if(id === 800) {
+        weatherIcon.src = "src/images/clear.png";
+      }
+
+      else if(id >= 200 && id <= 232){
+        weatherIcon.src = "src/images/thunderstrom.png";
+      }
+
+      else if(id >= 300 && id <= 321){
+        weatherIcon.src = "src/images/drizzle.png";
+      }
+
+      else if(id >= 500 && id <= 531){
+        weatherIcon.src = "src/images/rain.png";
+      }
+
+      else if(id >= 600 && id <= 622){
+        weatherIcon.src = "src/images/snow.png";
+      }
+
+      else if(id >= 701 && id <= 781){
+        weatherIcon.src = "src/images/atmosphere.png";
+      }
+
+      else if(id >= 801 && id <= 804){
+        weatherIcon.src = "src/images/cloud.png";
+      }
     }
-
-
-////////////////////////////weather image////////////////////////////////////////
 
 
 
