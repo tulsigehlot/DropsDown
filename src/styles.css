@@ -44,9 +44,16 @@ header .logo img{
 
 header .logo p{
     font-family: 'Amatic SC', cursive;
-    font-size: 45px;
+    font-size: 70px;
     font-weight: 700;
     color: white;
+}
+
+header span{
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    font-weight: 700;
+    color: #F87474;
 }
 
 header .search-bar{
@@ -177,6 +184,7 @@ header .search-bar a:active{
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+    gap: 0.5rem;
 }
 
 .card .left-side{
@@ -188,14 +196,11 @@ header .search-bar a:active{
     width: 350px;
     height: 500px;
     gap: 2rem;
-    border-right: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
+    }
 
 .card .left-side:hover{
     transform: scale(1.03);
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .card .left-side img{
@@ -216,9 +221,7 @@ header .search-bar a:active{
     padding: 4rem;
     width: 350px;
     height: 500px;
-    border-left: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+   
     gap: 3.2rem;
 
 }
