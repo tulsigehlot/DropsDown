@@ -249,7 +249,7 @@ header .search-bar a:active{
 }
 
 .card .right-side .humidity .humid-icon{
-    width: 80px;
+    width: 50px;
 }
 
 .card .right-side .min-max{
@@ -269,7 +269,7 @@ header .search-bar a:active{
 }
 
 .card .right-side .min-max .min-max-icon{
-    width: 80px;
+    width: 50px;
 }
 
 .card .right-side .location{
@@ -291,7 +291,7 @@ header .search-bar a:active{
 }
 
 .card .right-side .location .marker{
-    width: 80px;
+    width: 50px;
 }
 
 .card .right-side .btn button{
