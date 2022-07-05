@@ -261,11 +261,24 @@ header .search-bar a:active {
   gap: 2rem;
 }
 
+.card .right-side .min-max .likes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.7rem;
+    
+    text-shadow: 2px 2px 4px #000000;
+  
+}
+
+
 .card .right-side .min-max-temp {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+
   color: white;
   font-size: 1.7rem;
   
@@ -289,7 +302,7 @@ header .search-bar a:active {
   align-items: center;
   flex-direction: row;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   
   text-shadow: 2px 2px 4px #000000;
 }
