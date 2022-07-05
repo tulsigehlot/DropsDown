@@ -243,7 +243,7 @@ header .search-bar a:active {
   align-items: center;
   flex-direction: column;
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .card .right-side .humidity .humid-icon {
