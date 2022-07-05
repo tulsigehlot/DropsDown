@@ -47,6 +47,7 @@ header .logo p{
     font-size: 70px;
     font-weight: 700;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 header span{
@@ -74,6 +75,10 @@ header .search-bar .input {
     border: 3px solid white;
     border-radius: 50px;
     padding: 0.3rem;
+    -webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+
 }
 
 
@@ -85,6 +90,7 @@ header .search-bar .input .search{
     background: transparent;
     padding: 1rem;
     caret-color:white;
+    text-shadow: 2px 2px 4px #000000;
 
 }
 
@@ -152,6 +158,7 @@ header .search-bar a:active{
     font-size: 70px;
     font-weight: 700;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container .cover-img img{
