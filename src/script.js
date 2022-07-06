@@ -113,4 +113,4 @@ currLocation.addEventListener("click", function (position) {
       alert("User denied to access the location ");
     }
   );
-});
+}) ;
